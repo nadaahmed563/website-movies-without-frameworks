@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIES</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="Css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- start loading Page -->
+  <section id="loading"">
+    <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+      </div>    
+</section>
+
+<!-- End Loading Page -->
+<!-- Start Header -->
+<header class="header">
+    <div class="container">
+
+    <a href="#" class="logo"><img src="images/logo4.jpg" alt="logo placeholder"></a>
+    <div class="menu-btn">
+      <div class="menu-btn__lines"></div>
+    </div>
+    <ul class="menu-items">
+      <li><a href="#" class="menu-item">Home</a></li>
+      <li class="dropdown">
+        <a href="#" class="menu-item expand-btn">On Demand</a>
+        <ul class="dropdown-menu expandable">
+          <li><a href="#" class="menu-item">Prodcasts</a></li>
+          <li><a href="#" class="menu-item">TV</a></li>
+          <li class="dropdown dropdown-right">
+            <a href="#" class="menu-item expand-btn">
+                Movies
+              <i class="fas fa-angle-right"></i>
+            </a>
+            <ul class="menu-right expandable">
+              <li><a href="#" class="menu-item">Trending</a></li>
+              <li><a href="#" class="menu-item">Popular</a></li>
+              <li><a href="#" class="menu-item">Top Rated</a></li>
+              <li><a href="#" class="menu-item">Faourite</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="menu-item">Music</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="menu-item expand-btn">Community</a>
+        <ul class="dropdown-menu expandable">
+          <li><a href="#" class="menu-item">Plex Blog</a></li>
+          <li><a href="#" class="menu-item">Plex Labs</a></li>
+          <li><a href="#" class="menu-item">The Gist</a></li>
+        </ul>
+      </li>
+      <li><a href="#contact" class="menu-item">Contact Us</a></li>
+      <li><a href="#" class="phone-num menu-item"><i class="fas fa-phone-alt"></i>828-400-3891</a></li>
+   </ul>
+    </div>
+</header>
+    
+
+<!-- End Header -->
+<!-- Start Slider -->
+<section id="Home">
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/slider 1.jpg" alt="Slider-image" style="width:100%">
+          <div class="text">
+            <p>Where to watch movies online? A movie evening always starts with a very time-consuming 
+                and frustrating search for where to watch movies online.
+                JustWatch is there to help you find all the movies you can 
+                stream legally in India and make your life easier.
+            </p>
+           <button class="btn"><a href="#moives">Our Movies</a></button>
+
+          </div>
+          
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/slider2.jpg" alt="Slider-image" style="width:100%">
+          <div class="text">
+            <p>Find below the list of online movies available on Netflix, Hotstar, Hooq and 10 other streaming providers, 
+                organized by popularity.
+                JustWatch is there to help you find all the movies you can 
+                stream legally in India and make your life easier.
+            </p>
+           <button class="btn"><a href="#moives">Our Movies</a></button>
+
+          </div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/slider 1.jpg" alt="Slider-image" style="width:100%">
+          <div class="text">
+            <p>Amongst the best movies you can watch online right now, you can find Solo: A Star Wars Story, Jurassic: 
+                World Fallen Kingdom and The First Purge as well as Marvel movies like Avengers: Infinity War, Black Panther and Deadpool 2.</p>
+            <button class="btn"><a href="#moives">Our Movies</a></button>
+
+          </div>
+          
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+
+</section>
+<!-- End Slider -->
+<!-- Start PageContent -->
+<section id="moives">
+    <div class="container">
+        <h2 class="heading">Our Movies</h2>
+        <div class="movies-type">
+            <ul class="types">
+                <li class="element1"><a>Trending</a></li>
+                <li class="element2"><a>popular</a></li>
+                <li class="element3"><a>Upcoming</a></li>
+            </ul>
+        </div>
+        <div class="image-movies">
+            <div class="item-moving" id="postsRow">
+          
+             
+        </div>
+        
+    </div>
+    </div>
+
+</section>
+<!-- End Page Content -->
+<!-- Start Contact -->
+<section id="contact">
+  <div class="container">
+    <h2 class="text-white my-5">Contact Us...</h2>
+
+    <form action="#">
+      <div class="form-row">
+        <div class="input-data">
+          <input type="text" id="firstName">
+          <p class="alert" id="firstNameAlert">Your First Name is not Valid</p>
+          <label for="firstName">First Name</label>
+        </div>
+        <div class="input-data">
+          <input type="text" id="lastName">
+          <p class="alert" id="lastNameAlert">Your Last Name is not Valid</p>
+          <label for="lastName">Last Name</label>
+        </div>
+        </div>
+        <div class="form-row">
+        <div class="input-data">
+          <input type="email" id="email">
+          <p class="alert" id="emailAlert">Your Email is not Valid </p>
+          <label for="Email">Email Address</label>
+        </div>
+        <div class="input-data">
+          <input type="number" id="number">
+          <p class="alert" id="numberAlert">Your Number is not Valid</p>
+          <label for="">Phone Number</label>
+        </div>
+        </div>
+        <div class="form-row textarea">
+        <div class="input-data">
+        <textarea name="textarea" id="message" cols="30" rows="10" id="my-input" ></textarea>
+        <p class="alert" id="msgAlert">Your Message is not Valid</p>
+        <label for="textarea">Write Your Message</label>
+        </div>
+      </div>
+      <div class="form-row submit-btn">
+        <div class="input-data">
+          <input type="submit" value="submit" id="submitBtn" onclick="addContact(); return false" >
+        </div>
+      </div>
+    </form>
+
+</section>
+<!-- End Contact -->
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
